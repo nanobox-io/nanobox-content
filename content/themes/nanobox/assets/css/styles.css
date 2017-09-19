@@ -2173,3 +2173,77 @@ pre[class*="language-"] {
 
 .token.entity {
   cursor: help; }
+
+.code-copy {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  background: #F3F4F5;
+  border: 3px solid #E8ECF2; }
+  .code-copy .file-icon {
+    width: 115px;
+    padding: 1em;
+    border-right: 3px solid #E8ECF2; }
+    .code-copy .file-icon svg {
+      min-width: 40px; }
+  .code-copy .file-info {
+    width: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5em;
+    font-size: .85em;
+    font-weight: bold; }
+    .code-copy .file-info code {
+      width: 100%;
+      font-size: 1.1em;
+      background: none;
+      padding: 0;
+      margin-bottom: 1em; }
+    .code-copy .file-info .btn {
+      background: #1CACEF;
+      padding: .1em .5em .05em;
+      max-width: 220px;
+      margin-right: .75em;
+      max-height: 36px;
+      color: #fff;
+      font-weight: bold;
+      flex: .5;
+      -webkit-box-flex: .5;
+      -webkit-flex: .5;
+      -ms-flex: .5;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color .2s;
+      -webkit-transition: background-color .2s; }
+      .code-copy .file-info .btn:hover {
+        background: #2479bd; }
+    .code-copy .file-info .btn-icon {
+      display: inline-block;
+      margin-right: .5em;
+      width: 25px; }
+
+@media (max-width: 700px) {
+  .code-copy .file-icon {
+    width: 33%; }
+  .code-copy .file-info {
+    flex-direction: column; }
+    .code-copy .file-info .btn {
+      width: 100%;
+      margin-top: .55em;
+      padding-top: 0; }
+    .code-copy .file-info code {
+      margin-bottom: .25em; }
+    .code-copy .file-info .btn-icon {
+      width: 20px !important; } }
+
+pre.hide {
+  opacity: 0;
+  height: 0;
+  margin: 0; }

@@ -57,5 +57,5 @@ $(".code-copy-btn").click(function(){
 
 // View contents in place
 $('.code-view-btn').click(function(){
-  $(this).closest('.code-copy').next('pre').toggleClass('hide')
+  $(this).closest('.code-copy, .code-view').next('pre').toggleClass('hide')
 })

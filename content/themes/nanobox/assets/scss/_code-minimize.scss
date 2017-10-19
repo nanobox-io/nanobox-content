@@ -1,0 +1,25 @@
+.code-copy, .code-view  { display: flex; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; width: 100%; background: #F3F4F5; border: 3px solid #E8ECF2;
+  .file-icon            { width: 115px; padding: 1em; border-right: 3px solid #E8ECF2;
+    svg                 { min-width: 40px; }
+  }
+  .file-info            { width: 100%; display: flex; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; padding: 1.5em; font-size: .85em; font-weight: bold;
+    code                { width: 100%; font-size: 1.1em; background: none; padding: 0; margin-bottom: 1em; }
+    .btn                { background: #1CACEF; padding: .1em .5em .05em; max-width: 220px; margin-right: .75em; max-height: 36px; color: #fff; font-weight: bold; flex: .5; -webkit-box-flex: .5; -webkit-flex: .5; -ms-flex: .5; border-radius: 3px; cursor: pointer; transition: background-color .2s; -webkit-transition: background-color .2s;
+      &:hover           { background: #2479bd; }
+    }
+    .btn-icon           { display: inline-block; margin-right: .5em; width: 25px; }
+  }
+}
+
+@media (max-width: 700px) {
+  .code-copy            {
+    .file-icon          { width: 33%;}
+    .file-info          { flex-direction: column;
+      .btn              { width: 100%; margin-top: .55em; padding-top: 0; }
+      code              { margin-bottom: .25em; }
+      .btn-icon         { width: 20px !important; }
+    }
+  }
+}
+
+pre.hide                { opacity: 0; height: 0; margin: 0; overflow: hidden; }

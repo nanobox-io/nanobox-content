@@ -2174,7 +2174,7 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help; }
 
-.code-copy {
+.code-copy, .code-view {
   display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2183,13 +2183,13 @@ pre[class*="language-"] {
   width: 100%;
   background: #F3F4F5;
   border: 3px solid #E8ECF2; }
-  .code-copy .file-icon {
+  .code-copy .file-icon, .code-view .file-icon {
     width: 115px;
     padding: 1em;
     border-right: 3px solid #E8ECF2; }
-    .code-copy .file-icon svg {
+    .code-copy .file-icon svg, .code-view .file-icon svg {
       min-width: 40px; }
-  .code-copy .file-info {
+  .code-copy .file-info, .code-view .file-info {
     width: 100%;
     display: flex;
     display: -webkit-box;
@@ -2200,13 +2200,13 @@ pre[class*="language-"] {
     padding: 1.5em;
     font-size: .85em;
     font-weight: bold; }
-    .code-copy .file-info code {
+    .code-copy .file-info code, .code-view .file-info code {
       width: 100%;
       font-size: 1.1em;
       background: none;
       padding: 0;
       margin-bottom: 1em; }
-    .code-copy .file-info .btn {
+    .code-copy .file-info .btn, .code-view .file-info .btn {
       background: #1CACEF;
       padding: .1em .5em .05em;
       max-width: 220px;
@@ -2222,9 +2222,9 @@ pre[class*="language-"] {
       cursor: pointer;
       transition: background-color .2s;
       -webkit-transition: background-color .2s; }
-      .code-copy .file-info .btn:hover {
+      .code-copy .file-info .btn:hover, .code-view .file-info .btn:hover {
         background: #2479bd; }
-    .code-copy .file-info .btn-icon {
+    .code-copy .file-info .btn-icon, .code-view .file-info .btn-icon {
       display: inline-block;
       margin-right: .5em;
       width: 25px; }

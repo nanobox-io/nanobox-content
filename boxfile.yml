@@ -1,7 +1,7 @@
 run.config:
   engine: nodejs
   engine.config:
-    runtime: nodejs-6.9
+    runtime: nodejs-6.11
   extra_packages:
     - nginx
   fs_watch: true

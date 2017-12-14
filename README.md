@@ -15,13 +15,13 @@ cd nanobox-content
 
 ```bash
 # Add a convenient way to access your app from the browser
-nanobox dns add local content.nanobox.dev
+nanobox dns add local content.nanobox.local
 
 # Run Ghost with Nanobox
 nanobox run yarn start
 ```
 
-Visit your app at <a href="http://content.nanobox.dev:2368" target="\_blank">content.nanobox.dev:2368</a>
+Visit your app at <a href="http://content.nanobox.local:2368" target="\_blank">content.nanobox.local:2368</a>
 
 ## Adding Category & Subcategory Pages
 As we start to categorize and subcategorize posts, we'll need to add category and subcategory pages.
